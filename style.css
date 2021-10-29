@@ -1,0 +1,88 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner span {
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.banner a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.menu li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu li:hover {
+    background-color: coral;
+    border-radius: 5px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #003366;
+    color: azure;
+    padding: 20px;
+    align-items: center;
+}
+
+.contact i {
+    text-decoration: none;
+    margin: 3px;
+}
+
+.contact a {
+    color: inherit;
+}
+
+#toggle {
+    display: none;
+    right: 30px;
+    top: 30px;
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        flex-direction: column;
+    }
+    
+    .menu li {
+        display: block;
+        text-align: center;
+        width: auto;
+    }
+
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #toggle {
+        display: inline;
+        position: absolute;
+    }
+}
